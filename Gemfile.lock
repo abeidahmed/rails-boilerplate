@@ -192,6 +192,8 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.1.0)
     tilt (2.0.10)
+    turbo-rails (0.7.3)
+      rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
@@ -234,6 +236,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   spring
+  turbo-rails (~> 0.7.3)
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
