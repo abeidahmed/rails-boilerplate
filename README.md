@@ -2,6 +2,11 @@
 
 Sane defaults for your next project.
 
+## Requirements
+
+- Ruby 3.0.2
+- Rails 6.1.4
+
 ## Already setup for you
 
 - Stimulus.js
@@ -9,6 +14,7 @@ Sane defaults for your next project.
 - Turbo ready
 - Uses postgreSQL
 - Rubocop
+- Prettier
 - GitHub Actions
 
 ## Running sidekiq
