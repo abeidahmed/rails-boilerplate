@@ -5,10 +5,21 @@ Sane defaults for your next project.
 ## Already setup for you
 
 - Stimulus.js
-- GitHub Actions
-- Rubocop
+- Sidekiq
 - Turbo ready
 - Uses postgreSQL
+- Rubocop
+- GitHub Actions
+
+## Running sidekiq
+
+```bash
+bundle exec sidekiq
+```
+
+Configurations can be found at `./config/sidekiq.yml`
+
+You can view your jobs at `localhost:3000/sidekiq`
 
 ## Rename this app
 
