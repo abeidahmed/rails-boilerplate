@@ -9,6 +9,7 @@ Sane defaults for your next project.
 
 ## Already setup for you
 
+- Authentication using warden
 - Stimulus.js
 - Sidekiq
 - Turbo ready

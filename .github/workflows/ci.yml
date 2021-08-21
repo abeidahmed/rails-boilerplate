@@ -17,6 +17,7 @@ jobs:
       PGHOST: localhost
       PGUSER: postgres
       PGPASSWORD: postgres
+      REDIS_URL: redis://localhost:6379/0
     services:
       postgres:
         image: postgres:11
@@ -24,6 +25,10 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         ports: ['5432:5432']
+      redis:
+        image: redis:alpine
+        ports: ['6379:6379']
+        options: --entrypoint redis-server
 
     steps:
       - name: Checkout code
