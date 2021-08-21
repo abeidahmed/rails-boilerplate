@@ -1,0 +1,8 @@
+<%= form_with model: User.new, url: password_resets_path do |f| %>
+  <%= f.label :email, "Email address" %>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+
+  <%= f.submit "Send password reset link" %>
+<% end %>
+
+<%= link_to "go back to login", new_sessions_path %>

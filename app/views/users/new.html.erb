@@ -1,0 +1,14 @@
+<%= form_with model: @user do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, autofocus: true, autocomplete: "name", required: true %>
+
+  <%= f.label :email, "Email address" %>
+  <%= f.email_field :email, autocomplete: "email", required: true %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, autocomplete: "new-password", required: true %>
+
+  <%= f.submit "Sign up", class: "btn btn-primary btn-large btn-block" %>
+<% end %>
+
+<%= link_to "Login", new_sessions_path %>
